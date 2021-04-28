@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <title>Basic Statements & Variables</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      .content {
+        border: 1px solid #888;
+        width: 50%;
+        margin: 0 auto;
+        padding: 25px;
+        margin-top: 80px;
+      }
+​
+      button {
+        margin-top: 20px;
+      }
+​
+      .cost {
+        font-size: 24px;
+      }
+
+      .blank {
+        font-weight: 200;
+      }
+
+    </style>
+  </head>
+  <body>
+​
+    <!-- <div class="content" id="content">
+      <h2>Apple Price Total</h2>
+      <div id="cost" class="cost">Cost: $<span id="priceNumber">5</span> per apple</div>
+      <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
+    </div> -->
+
+
+    <div class="content">
+      <h3>Name: <span id="nameA" class="blank">Blank</span></h3>
+      <h3>Movie: <span id="movieA" class="blank">Blank</span></h3>
+      <h3>Food: <span id="foodA" class="blank">Blank</span></h3>
+      <button type="button" class="btn btn-primary" id="calculateA">Calculate</button>
+    </div>
+
+    <div class="content">
+      <h3>Name: <span id="nameB" class="blank">Blank</span></h3>
+      <h3>Movie: <span id="movieB" class="blank">Blank</span></h3>
+      <h3>Food: <span id="foodB" class="blank">Blank</span></h3>
+      <button type="button" class="btn btn-primary" id="calculateB">Calculate</button>
+    </div>
+
+    <div class="content">
+      <h3>Name: <span id="nameC" class="blank">Blank</span></h3>
+      <h3>Movie: <span id="movieC" class="blank">Blank</span></h3>
+      <h3>Food: <span id="foodC" class="blank">Blank</span></h3>
+      <button type="button" class="btn btn-primary" id="calculateC">Calculate</button>
+    </div>
+​
+    <script>
+
+    var getButton = document.getElementById('calculateA');
+    console.dir(getButton);
+// variables A
+    var newNameA = 'Ciaran';
+    var getNameA = document.getElementById('nameA');
+    var newMovieA = 'Top Gun';
+    var getMovieA = document.getElementById('movieA');
+    var newFoodA = 'Pizza Party!';
+    var getFoodA = document.getElementById('foodA');
+// variables B
+    var newNameB = 'Khris';
+    var getNameB = document.getElementById('nameB');
+    var newMovieB = 'Fight Club';
+    var getMovieB = document.getElementById('movieB');
+    var newFoodB = 'Pineapple Pie!';
+    var getFoodB = document.getElementById('foodB');
+// variables C
+    var newNameC = 'Toby';
+    var getNameC = document.getElementById('nameC');
+    var newMovieC = 'Toy Story';
+    var getMovieC = document.getElementById('movieC');
+    var newFoodC = 'Pasta Pot!';
+    var getFoodC = document.getElementById('foodC');
+
+// Button function A
+
+var getButton = document.getElementById('calculateA');
+console.dir(getButton);
+getButton.onclick = function () {
+
+      console.dir(getNameA.textContent);
+      getNameA.textContent = newNameA;
+
+      console.dir(getMovieA.textContent);
+      getMovieA.textContent = newMovieA;
+
+      console.dir(getFoodA.textContent);
+      getFoodA.textContent = newFoodA;
+    
+
+// button funtion B
+    // var getButton = document.getElementById('calculateB');
+    // console.dir(getButton);
+    // getButton.onclick = function () {
+
+      console.dir(getNameB.textContent);
+      getNameB.textContent = newNameB;
+
+      console.dir(getMovieB.textContent);
+      getMovieB.textContent = newMovieB;
+
+      console.dir(getFoodB.textContent);
+      getFoodB.textContent = newFoodB;
+
+
+// button function C
+    // var getButton = document.getElementById('calculateC');
+    // console.dir(getButton);
+    // getButton.onclick = function () {
+
+      console.dir(getNameC.textContent);
+      getNameC.textContent = newNameC;
+
+      console.dir(getMovieC.textContent);
+      getMovieC.textContent = newMovieC;
+
+
+      console.dir(getFoodC.textContent);
+      getFoodC.textContent = newFoodC;
+    };
+
+
+      // // ​ a Variable
+      // var getCost = document.getElementById('cost');
+      // // this is a console.log
+      // console.log(getCost);
+      // // this is a console.dir
+      // console.dir(getCost);
+
+        // SECTION A
+      // // these are three variables
+      // var newApplePrice = 'Cost: $10 per apple';
+      // // var cheapApplePrice = 'cost: $1 per apple';
+      // // var expensiveApplePrice = 'cost: $20 per apple';
+      //
+      // // 1. get the element you want to change
+      // var getCost = document.getElementById('cost');
+      // // 2. check we have the element
+      // console.dir(getCost.textContent);
+      // // 3. change the text in the element
+      // getCost.textContent = newApplePrice;
+
+// SECTION B
+      // var newPrice = 10;
+      // // var newPriceAsString = '10';
+      // var getPriceNumber = document.getElementById('priceNumber');
+      // console.dir(getPriceNumber.textContent);
+      // getPriceNumber.textContent = newPrice;
+
+// WINDOW ONCLICK FUNCTION
+      // window.onclick = function () {
+      //   var newPrice = 10;
+      //   // var newPriceAsString = '10';
+      //   var getPriceNumber = document.getElementById('priceNumber');
+      //   console.dir(getPriceNumber.textContent);
+      //   getPriceNumber.textContent = newPrice;
+      // };
+// WUNDOW ONLCICK FUNCTION ENDS
+
+      // var getButton = document.getElementById('calculate');
+      // console.dir(getButton);
+      // getButton.onclick = function () {
+      //   var newPrice = 10;
+      //   // var newPriceAsString = '10';
+      //   var getPriceNumber = document.getElementById('priceNumber');
+      //   console.dir(getPriceNumber.textContent);
+      //   getPriceNumber.textContent = newPrice;
+      // };
+
+      // console.dir(window);
+
+
+
+    </script>
+  </body>
+</html>

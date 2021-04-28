@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Object</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		/* CSS Here */
+		body {
+			margin: 5%;
+		}
+		.a-sentence {
+			margin: 75px 0px;
+		}
+
+		#firstName:hover {
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Movie</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Data Goes Here -->
+			<tr id="personA">
+				<td id="firstName">Click Me!</td>
+				<td id="lastName">Doe</td>
+				<td id="movie">Gump Forrest</td>
+				<td id="age">40</td>
+			</tr>
+			<tr id="personB">
+				<td id="firstName">John</td>
+				<td id="lastName">Doe</td>
+				<td id="movie">Gump Forrest</td>
+				<td id="age">40</td>
+			</tr>
+			<tr id="personC">
+				<td id="firstName">John</td>
+				<td id="lastName">Doe</td>
+				<td id="movie">Gump Forrest</td>
+				<td id="age">40</td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+	<script>
+
+// Objects use curly brackets
+// var tobyEdgar = {this is an object};
+		// var tobyEdgar = {
+		// 	// properties..... like firstName, the value 'Toby' is a string - naming conventions inside the date set
+		// 	firstName: 'Toby',
+		// 	lastName: 'Edgar',
+		// 	age: 26,
+		// 	likesPasta: true,
+		// 	likesCookedCarrot: false,
+		// 	favouriteDrink: ['negroni', 'sprite', 'icy water']
+		// };
+		// console.log(tobyEdgar.firstName);
+
+		var person1 = {
+			firstName: 'Julian',
+			lastName: 'Dennison',
+			movies: ['Hunt for the Wilderpeople', ' Godzilla vs. Kong', ' Deadpool 2'],
+			age: 18
+		};
+
+		var person2 = {
+			firstName: 'Zazie',
+			lastName: 'Beetz',
+			movies: ['Joker', 'Deadpool 2', 'X-Force'],
+			age: 29
+		};
+
+		var person3 = {
+			firstName: 'Lakeith',
+			lastName: 'Stanfield',
+			movies: ['Sorry to Bother You', 'Judas and the Black Messiah', 'The Photograph'],
+			age: 29
+		};
+
+		// var getFirstNameActor = document.getElementById('firstNameActor');
+
+
+
+
+		// 1. make the function
+		function updateTable () {
+
+			// PERSON 1
+			var getFirstNameActor = document.querySelector('#personA #firstName');
+			getFirstNameActor.textContent = person1.firstName;
+
+			var getLastNameActor = document.querySelector('#personA #lastName');
+			getLastNameActor.textContent = person1.lastName;
+
+			var getMovieActor = document.querySelector('#personA #movie');
+			getMovieActor.textContent = person1.movies[0];
+
+			var getAgeActor = document.querySelector('#personA #age');
+			getAgeActor.textContent = person1.age;
+
+			// PERSON 2
+			var getFirstNameActor2 = document.querySelector('#personB #firstName');
+			getFirstNameActor2.textContent = person2.firstName;
+
+			var getLastNameActor2 = document.querySelector('#personB #lastName');
+			getLastNameActor2.textContent = person2.lastName;
+
+			var getMovieActor2 = document.querySelector('#personB #movie');
+			getMovieActor2.textContent = person2.movies[0];
+
+			var getAgeActor2 = document.querySelector('#personB #age');
+			getAgeActor2.textContent = person2.age;
+
+			// PERSON 3
+			var getFirstNameActor3 = document.querySelector('#personC #firstName');
+			getFirstNameActor3.textContent = person3.firstName;
+
+			var getLastNameActor3 = document.querySelector('#personC #lastName');
+			getLastNameActor3.textContent = person3.lastName;
+
+			var getMovieActor3 = document.querySelector('#personC #movie');
+			getMovieActor3.textContent = person3.movies[0];
+
+			var getAgeActor3 = document.querySelector('#personC #age');
+			getAgeActor3.textContent = person3.age;
+
+		};
+
+		// 2. call the function
+		// updateTable();
+		//Function ends
+
+		// A jQuery click function, can be mixed with vanilla .js
+		$('#firstName').click(function(){
+			updateTable();
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

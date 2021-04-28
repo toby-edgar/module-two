@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		/* CSS Here */
+		body {
+			margin: 5%;
+		}
+		.a-sentence {
+			margin: 75px 0px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="a-sentence">
+		<span id="one">This</span>
+		<span id="two"> is </span>
+		<span id="three">a </span>
+		<span id="four">that</span>
+		<span id="five">lives</span>
+		<span id="six">within</span>
+		<span id="seven">many</span>
+		<span id="eight">spans</span>
+		<span id="nine">on</span>
+		<span id="ten">an</span>
+		<span id="eleven">html</span>
+		<span id="twelve">page.</span>
+	</h1>
+​
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Movie</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Data Goes Here -->
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>Gump Forrest</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>Gump Forrest</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>Gump Forrest</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>Gump Forrest</td>
+				<td>40</td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+​
+	<script>
+	// concatenating
+
+	function updateTheHtml() {
+		var theArray = [ 'monkey', 'was', 'them', 'The', 'but', 'the', 'little', 'green', 'banana', 'liked', 'yellow.', 'bright'];
+		console.log(theArray[3] + ' ' + theArray[8] + ' ' + theArray[1] + ' ' + theArray[7] + ' ' + theArray[4] + ' ' + theArray[5] + ' ' + theArray[6] + ' ' + theArray[0] + ' ' + theArray[9] + ' ' + theArray[2] + ' ' + theArray[11] + ' ' + theArray[10]);
+
+		var getWord1 = document.getElementById('one');
+		var getWord2 = document.getElementById('two');
+		var getWord3 = document.getElementById('three');
+		var getWord4 = document.getElementById('four');
+		var getWord5 = document.getElementById('five');
+		var getWord6 = document.getElementById('six');
+		var getWord7 = document.getElementById('seven');
+		var getWord8 = document.getElementById('eight');
+		var getWord9 = document.getElementById('nine');
+		var getWord10 = document.getElementById('ten');
+		var getWord11 = document.getElementById('eleven');
+		var getWord12 = document.getElementById('twelve');
+
+		getWord1.textContent = theArray[3];
+		getWord2.textContent = theArray[8];
+		getWord3.textContent = theArray[1];
+		getWord4.textContent = theArray[7];
+		getWord5.textContent = theArray[4];
+		getWord6.textContent = theArray[5];
+		getWord7.textContent = theArray[6];
+		getWord8.textContent = theArray[0];
+		getWord9.textContent = theArray[9];
+		getWord10.textContent = theArray[2];
+		getWord11.textContent = theArray[11];
+		getWord12.textContent = theArray[10];
+	};
+
+	setTimeout (updateTheHtml, 3000);
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
